@@ -1,0 +1,11 @@
+name = "phongvu-api-proxy"
+main = "src/worker.js"
+compatibility_date = "2026-07-11"
+
+[vars]
+# API gốc - Set sau khi deploy qua Cloudflare Dashboard hoặc:
+# wrangler secret put PHONGVU_API_BASE
+# KHÔNG commit giá trị thật lên git!
+
+# Rate limiting
+RATE_LIMIT_PER_MINUTE = "60"
